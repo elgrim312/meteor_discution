@@ -1,0 +1,97 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'i',
+1 verbose cli   '--save-dev',
+1 verbose cli   'eslint',
+1 verbose cli   '[eslint-plugins]' ]
+2 info using npm@3.6.0
+3 info using node@v5.7.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData eslint
+8 silly fetchPackageMetaData [eslint-plugins]
+9 silly fetchNamedPackageData eslint
+10 silly mapToRegistry name eslint
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/eslint
+14 silly fetchOtherPackageData [eslint-plugins]
+15 silly cache add args [ '[eslint-plugins]', null ]
+16 verbose cache add spec [eslint-plugins]
+17 verbose request uri https://registry.npmjs.org/eslint
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 10:01:50
+20 verbose request id ed4f1bc6ec2f2818
+21 http request GET https://registry.npmjs.org/eslint
+22 silly cache add parsed spec Result {
+22 silly cache add   raw: '[eslint-plugins]',
+22 silly cache add   scope: null,
+22 silly cache add   name: null,
+22 silly cache add   rawSpec: '[eslint-plugins]',
+22 silly cache add   spec: '/Users/alexandrevagnair/Documents/discution_paul/Web_chat/[eslint-plugins]',
+22 silly cache add   type: 'local' }
+23 error addLocal Could not install /Users/alexandrevagnair/Documents/discution_paul/Web_chat/[eslint-plugins]
+24 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/Users/alexandrevagnair/Documents/discution_paul/Web_chat/[eslint-plugins]'
+24 silly fetchPackageMetaData     at Error (native)
+24 silly fetchPackageMetaData  error for [eslint-plugins] { [Error: ENOENT: no such file or directory, open '/Users/alexandrevagnair/Documents/discution_paul/Web_chat/[eslint-plugins]']
+24 silly fetchPackageMetaData   errno: -2,
+24 silly fetchPackageMetaData   code: 'ENOENT',
+24 silly fetchPackageMetaData   syscall: 'open',
+24 silly fetchPackageMetaData   path: '/Users/alexandrevagnair/Documents/discution_paul/Web_chat/[eslint-plugins]' }
+25 http 200 https://registry.npmjs.org/eslint
+26 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 verbose headers   etag: '"1O6LTIXKX7F5JAR23E54DP9SF"',
+26 verbose headers   'content-type': 'application/json',
+26 verbose headers   'cache-control': 'max-age=300',
+26 verbose headers   'content-length': '266603',
+26 verbose headers   'accept-ranges': 'bytes',
+26 verbose headers   date: 'Thu, 31 Mar 2016 08:01:51 GMT',
+26 verbose headers   via: '1.1 varnish',
+26 verbose headers   age: '273',
+26 verbose headers   connection: 'keep-alive',
+26 verbose headers   'x-served-by': 'cache-ams4134-AMS',
+26 verbose headers   'x-cache': 'HIT',
+26 verbose headers   'x-cache-hits': '7',
+26 verbose headers   'x-timer': 'S1459411311.356068,VS0,VE0',
+26 verbose headers   vary: 'Accept' }
+27 silly get cb [ 200,
+27 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly get     etag: '"1O6LTIXKX7F5JAR23E54DP9SF"',
+27 silly get     'content-type': 'application/json',
+27 silly get     'cache-control': 'max-age=300',
+27 silly get     'content-length': '266603',
+27 silly get     'accept-ranges': 'bytes',
+27 silly get     date: 'Thu, 31 Mar 2016 08:01:51 GMT',
+27 silly get     via: '1.1 varnish',
+27 silly get     age: '273',
+27 silly get     connection: 'keep-alive',
+27 silly get     'x-served-by': 'cache-ams4134-AMS',
+27 silly get     'x-cache': 'HIT',
+27 silly get     'x-cache-hits': '7',
+27 silly get     'x-timer': 'S1459411311.356068,VS0,VE0',
+27 silly get     vary: 'Accept' } ]
+28 verbose get saving eslint to /Users/alexandrevagnair/.npm/registry.npmjs.org/eslint/.cache.json
+29 verbose correctMkdir /Users/alexandrevagnair/.npm correctMkdir not in flight; initializing
+30 silly rollbackFailedOptional Starting
+31 silly rollbackFailedOptional Finishing
+32 silly runTopLevelLifecycles Starting
+33 silly runTopLevelLifecycles Finishing
+34 silly install printInstalled
+35 verbose stack Error: ENOENT: no such file or directory, open '/Users/alexandrevagnair/Documents/discution_paul/Web_chat/[eslint-plugins]'
+35 verbose stack     at Error (native)
+36 verbose cwd /Users/alexandrevagnair/Documents/discution_paul/Web_chat
+37 error Darwin 15.3.0
+38 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "i" "--save-dev" "eslint" "[eslint-plugins]"
+39 error node v5.7.1
+40 error npm  v3.6.0
+41 error path /Users/alexandrevagnair/Documents/discution_paul/Web_chat/[eslint-plugins]
+42 error code ENOENT
+43 error errno -2
+44 error syscall open
+45 error enoent ENOENT: no such file or directory, open '/Users/alexandrevagnair/Documents/discution_paul/Web_chat/[eslint-plugins]'
+46 error enoent ENOENT: no such file or directory, open '/Users/alexandrevagnair/Documents/discution_paul/Web_chat/[eslint-plugins]'
+46 error enoent This is most likely not a problem with npm itself
+46 error enoent and is related to npm not being able to find a file.
+47 verbose exit [ -2, true ]

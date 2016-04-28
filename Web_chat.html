@@ -1,0 +1,29 @@
+<template name="home">
+
+    <head>
+        <title>Web_chat</title>
+         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1 class="text-center text-info">Welcome to the Web 1 chat !</h1>
+        {{#if currentUser}}
+            {{>chat}}
+        {{else}}
+            {{>from}}
+        {{/if}}
+    </body>
+</template>
+
+<template name="from">
+    <div class="container">
+        <form action="/chat" class="row">
+            <input type="text" placeholder="Prenom" id="first_name" class="form-control">
+            <input type="text" placeholder="nom" id="last_name" class="form-control">
+            <input type="submit" class="btn btn-primary btn-lg btn-block">
+        </form>
+    </div>
+</template>
+<template name="chat">
+    {{>SimpleChatWindow roomId="web 1" username=account.name limit=limit}}
+</template>
